@@ -1,0 +1,196 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #e94560 0%, #533483 100%);
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .nav-button {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .nav-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      color: #FFC700;
+      font-size: 2em;
+      margin-bottom: 25px;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .guide-card {
+      background: linear-gradient(135deg, rgba(233, 69, 96, 0.2) 0%, rgba(83, 52, 131, 0.2) 100%);
+      padding: 25px;
+      border-radius: 15px;
+      border: 2px solid rgba(255, 199, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .guide-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(255, 199, 0, 0.3);
+      border-color: #FFC700;
+    }
+
+    .guide-card h3 {
+      color: #FFC700;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .guide-card p {
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    .tips-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .tips-list li {
+      background: rgba(255, 199, 0, 0.1);
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 4px solid #FFC700;
+      border-radius: 8px;
+      font-size: 1.1em;
+    }
+
+    .tips-list li:hover {
+      background: rgba(255, 199, 0, 0.2);
+      transform: translateX(10px);
+      transition: all 0.3s ease;
+    }
+
+    .strategy-box {
+      background: linear-gradient(135deg, rgba(15, 52, 96, 0.5) 0%, rgba(22, 33, 62, 0.5) 100%);
+      padding: 25px;
+      border-radius: 15px;
+      margin: 20px 0;
+      border: 2px solid rgba(233, 69, 96, 0.4);
+    }
+
+    .strategy-box h4 {
+      color: #e94560;
+      font-size: 1.3em;
+      margin-bottom: 15px;
+    }
+
+    .emoji-badge {
+      font-size: 2.5em;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 60px;
+      border-top: 3px solid #e94560;
+    }
+
+    .footer-info {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-info h4 {
+      color: #FFC700;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .footer-info p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    .ad-banner {
+      background: rgba(255, 199, 0, 0.1);
+      border: 2px dashed #FFC700;
+      padding: 30px;
+      border-radius: 15px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .section {
+        padding: 25px;
+      }
+
+      .guide-grid {
+        grid-template-columns: 1fr;
+      }
+    }
